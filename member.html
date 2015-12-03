@@ -6,19 +6,22 @@
 </head>
 <body>
 
+    <fieldset>
+        <legend>회원가입 양식</legend>
+
 
 <form action="member.html" method="get">
 <ul>
-    <li>아이디: <input type="text" value="아이디" name="userid"></li>
-    <li>비밀번호: <input type="password" name="userpw"></li>
-    <li>이메일: <input type="text" value="이메일" name="useremail"></li>
-    <li>성별:
-        <input type="radio" name="sex" checked="checked">남자
-        <input type="radio" name="sex">여자
+    <li><label for="userId">아이디: </label><input type="text" id="userId" value="아이디" name="userid"></li>
+    <li><label for="userPW">비밀번호: </label><input type="password" id="userPW" name="userpw"></li>
+    <li><label for="userEMAIL">이메일: </label><input type="text" id="userEMAIL" value="이메일" name="useremail"></li>
+    <li><label for="man">성별: </label>
+        <label for="man"><input type="radio" id="man" name="sex">남자</label>
+        <label for="woman"><input type="radio" id="woman" name="sex">여자
     </li>
-    <li>취미:
-        <input type="checkbox" checked="checked" name="option1">영화감상
-        <input type="checkbox" checked="checked" name="option2">자전거타기
+    <li><label for="useroption1">취미: </label>
+        <input type="checkbox" id="useroption1" name="option1">영화감상
+        <input type="checkbox" name="option2">자전거타기
         <input type="checkbox" name="option3">음악듣기
         <input type="checkbox" name="option4">노래부르기
         <input type="checkbox" name="option5">헬스
@@ -28,10 +31,11 @@
     <li>첨부파일: <input type="file"></li>
 </ul>
 
-
 <input type="button" value="뒤로가기">
 <input type="submit" value="전송">
 <input type="reset" value="초기화">
+
+    </fieldset>
 </form>
 
 </body>
